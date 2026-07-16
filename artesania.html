@@ -36,23 +36,36 @@
                 <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
                     href="cafeteria.html">Café</a>
             </div>
+            <div class="flex items-center gap-6 md:hidden">
+                <button id="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false" class="md:hidden">
+                    <span class="material-symbols-outlined text-primary" id="mobile-menu-icon">menu</span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden flex-col gap-1 px-margin-desktop py-4 bg-surface border-t border-outline-variant">
+            <a href="index.html" class="block py-3 font-label-sm text-label-sm text-on-surface-variant">Inicio</a>
+            <a href="joyeria.html" class="block py-3 font-label-sm text-label-sm text-on-surface-variant">Joyería</a>
+            <a href="artesania.html" class="block py-3 font-label-sm text-label-sm text-primary">Artesanías</a>
+            <a href="cafeteria.html" class="block py-3 font-label-sm text-label-sm text-on-surface-variant">Café</a>
         </div>
     </nav>
     <!-- Hero Section -->
-    <header class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <header class="relative h-[70vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover hero-zoom" data-alt="Vista de artesanias dentro del local"
-                src="/img/fotos/img_artesania/f28.jpg">
+            <img class="w-full h-full object-cover object-[center_30%] hero-zoom"
+                data-alt="Vista de artesanias dentro del local" src="img/fotos/img_artesania/f28.jpg">
             <div class="absolute inset-0 bg-black/60"></div>
         </div>
         <div class="relative z-10 text-center px-margin-mobile">
-            <p class="font-label-sm text-label-sm text-white/90 tracking-[0.3em] uppercase mb-stack-sm stagger-in" style="color: #ffffff; animation-delay: 0.2s">El
+            <p class="font-label-sm text-label-sm text-white/90 tracking-[0.3em] uppercase mb-stack-sm stagger-in"
+                style="color: #ffffff; animation-delay: 0.2s">El
                 Alma de la
                 Tierra</p>
-            <h1 class="font-display-lg text-display-lg mb-stack-md leading-tight stagger-in" style="color: #ffffff; animation-delay: 0.2s"
-                style="animation-delay: 0.2s">Artesanías</h1>
-            <p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto italic stagger-in" style="color: #ffffff; animation-delay: 0.2s"
-                style="animation-delay: 0.4s">
+            <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight stagger-in"
+                style="color: #ffffff; animation-delay: 0.2s">Artesanías</h1>
+            <p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto italic stagger-in"
+                style="color: #ffffff; animation-delay: 0.2s" style="animation-delay: 0.4s">
                 Un tributo a los maestros que transforman la materia prima en legados tangibles de nuestra identidad
                 colombiana.
             </p>
@@ -85,13 +98,17 @@
         <div class="max-w-container-max mx-auto px-margin-desktop">
             <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg reveal-on-scroll">
                 <div>
-                    <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Colección
+                    <span
+                        class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2 block">Colección
                         I</span>
-                    <h2 class="font-display-lg text-display-lg text-primary">Cestería Tradicional</h2>
+                    <h2
+                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+                        Cestería Tradicional</h2>
                 </div>
                 <p
-                    class="font-body-md text-body-md text-on-surface-variant max-w-sm text-right mt-stack-sm md:mt-0 italic">
-                    Cada pieza conserva técnicas ancestrales transmitidas de generación en generación por comunidades artesanas colombianas
+                    class="font-body-md text-body-md text-on-surface-variant max-w-sm text-left md:text-right mt-stack-sm md:mt-0 italic">
+                    Cada pieza conserva técnicas ancestrales transmitidas de generación en generación por comunidades
+                    artesanas colombianas
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
@@ -108,7 +125,7 @@
                                 </h3>
                                 <p class="font-label-sm text-label-sm text-secondary mt-1">COMUNIDAD WOUNAAN</p>
                             </div>
-                            <a href="https://wa.me/573004963443?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20%20Jarr%C3%B3n%20Werregue%20"
+                            <a href="https://wa.me/573004963443?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Jarr%C3%B3n%20Werregue%20"
                                 target="_blank" rel="noopener noreferrer"
                                 class="bg-primary text-white font-label-sm px-6 py-3 flex items-center justify-center gap-2 hover:bg-primary/90 transition-all active:scale-95">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
@@ -122,14 +139,14 @@
                     <div class="bg-white p-stack-md reveal-on-scroll group">
                         <div class="relative overflow-hidden mb-stack-sm">
                             <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                                data-alt="Souvenirs colombianos"
-                                src="/img/fotos/img_artesania/f56.jpg">
+                                data-alt="Souvenirs colombianos" src="/img/fotos/img_artesania/f56.jpg">
                             <div
                                 class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             </div>
                         </div>
                         <h4 class="font-headline-md text-headline-md text-primary">Souvenirs Colombianos</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Piezas artesanales ideales para llevar un recuerdo de Colombia.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Piezas artesanales ideales para
+                            llevar un recuerdo de Colombia.</p>
                         <div class="mt-stack-sm flex items-center justify-between">
                         </div>
                     </div>
@@ -146,16 +163,19 @@
         </div>
     </section>
     <!-- Talla en Madera (Bento Grid) -->
-    <section class="py-section-gap overflow-hidden">
+    <section class="py-section-gap">
         <div class="max-w-container-max mx-auto px-margin-desktop">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
                 <div class="md:col-span-2 flex flex-col justify-center reveal-on-scroll">
-                    <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Colección
+                    <span
+                        class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2 block">Colección
                         II</span>
-                    <h2 class="font-display-lg text-display-lg text-primary mb-stack-md">Expresiones 
+                    <h2
+                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+                        Expresiones
                         Artesanales</h2>
                     <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
-                        Cada objeto refleja una tradición distinta, conservando técnicas ancestrales 
+                        Cada objeto refleja una tradición distinta, conservando técnicas ancestrales
                         que continúan dando vida al patrimonio cultural colombiano.
                     </p>
                     <div class="flex flex-wrap gap-stack-md">
@@ -170,33 +190,29 @@
                     <div
                         class="aspect-square bg-surface-container-high overflow-hidden reveal-on-scroll group relative">
                         <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            data-alt="Jarron artesanal pintado a mano"
-                            src="/img/fotos/img_artesania/f92.jpg">
+                            data-alt="Jarron artesanal pintado a mano" src="/img/fotos/img_artesania/f92.jpg">
                     </div>
                     <div class="aspect-square bg-surface-container-high overflow-hidden reveal-on-scroll group relative"
                         style="transition-delay: 100ms;">
                         <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            data-alt="Muñecos de madera pintados a mano"
-                            src="/img/fotos/img_artesania/f79.jpg">
+                            data-alt="Muñecos de madera pintados a mano" src="/img/fotos/img_artesania/f79.jpg">
                     </div>
                     <div class="aspect-square bg-surface-container-high overflow-hidden reveal-on-scroll group relative"
                         style="transition-delay: 200ms;">
                         <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            data-alt="sombrero vueltiao artesanal colombiano"
-                            src="/img/fotos/img_artesania/f86.jpg">
+                            data-alt="sombrero vueltiao artesanal colombiano" src="/img/fotos/img_artesania/f86.jpg">
                     </div>
                     <div class="aspect-square bg-surface-container-high overflow-hidden reveal-on-scroll group relative"
                         style="transition-delay: 300ms;">
                         <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            data-alt="Billeteras de cuero artesanal colombiano"
-                            src="/img/fotos/img_artesania/f33.jpg">
+                            data-alt="Billeteras de cuero artesanal colombiano" src="/img/fotos/img_artesania/f33.jpg">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Cerámica de Autor (Full Width Text with Glass Card) -->
-    <section class="relative min-h-[819px] flex items-center py-section-gap">
+    <section class="relative min-h-[500px] md:min-h-[819px] flex items-center py-section-gap">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover"
                 data-alt="A wide-angle atmospheric photo of a pottery workshop in Colombia at dusk. Soft golden light filters through a window, illuminating rows of unfinished clay vases on wooden shelves. The scene is quiet, prestigious, and deeply authentic. In the foreground, a single finished ceramic piece with a modern silhouette stands out, bridging the gap between ancient tradition and contemporary design."
@@ -205,11 +221,14 @@
         </div>
         <div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
             <div
-                class="max-w-xl bg-surface/60 backdrop-blur-xl p-stack-lg border-[0.5px] border-white/50 shadow-2xl reveal-on-scroll">
-                <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Colección III</span>
-                <h2 class="font-display-lg text-display-lg text-primary mb-stack-md">Cerámica y Barro</h2>
+                class="max-w-xl mx-auto bg-surface/60 backdrop-blur-xl p-stack-lg border-[0.5px] border-white/50 shadow-2xl reveal-on-scroll">
+                <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2 block">Colección
+                    III</span>
+                <h2
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+                    Cerámica y Barro</h2>
                 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
-                    Figuras, vasijas y piezas decorativas elaboradas a mano por artesanos colombianos. Cada pieza 
+                    Figuras, vasijas y piezas decorativas elaboradas a mano por artesanos colombianos. Cada pieza
                     cuenta una historia de tradición, color y cultura popular.
                 </p>
                 <div class="flex gap-stack-md">
@@ -225,21 +244,27 @@
         <div
             class="max-w-container-max mx-auto px-margin-desktop flex flex-wrap justify-center md:justify-between items-center gap-gutter">
             <div class="flex items-center gap-stack-md">
-                <span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary text-2xl">workspace_premium</span>
+                </div>
                 <div>
                     <p class="font-label-sm text-primary uppercase">Certificado de Origen</p>
                     <p class="font-body-md text-on-surface-variant">Autenticidad garantizada</p>
                 </div>
             </div>
             <div class="flex items-center gap-stack-md">
-                <span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary text-2xl">handshake</span>
+                </div>
                 <div>
                     <p class="font-label-sm text-primary uppercase">Comercio Justo</p>
                     <p class="font-body-md text-on-surface-variant">Apoyo directo al artesano</p>
                 </div>
             </div>
             <div class="flex items-center gap-stack-md">
-                <span class="material-symbols-outlined text-primary text-3xl">diversity_3</span>
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary text-2xl">diversity_3</span>
+                </div>
                 <div>
                     <p class="font-label-sm text-primary uppercase">Hecho a Mano</p>
                     <p class="font-body-md text-on-surface-variant">Comunidades de toda Colombia</p>
@@ -291,7 +316,8 @@
                         </svg>
                     </a>
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com/profile.php?id=61591786051568" aria-label="Facebook" class="text-primary hover:opacity-70 transition-opacity">
+                    <a href="https://www.facebook.com/profile.php?id=61591786051568" aria-label="Facebook"
+                        class="text-primary hover:opacity-70 transition-opacity">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path
                                 d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -310,7 +336,7 @@
             </div>
         </div>
         <div
-            class="border-t border-outline-variant px-margin-desktop py-stack-sm flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto">
+            class="border-t border-outline-variant px-margin-desktop py-stack-sm pb-20 md:pb-stack-sm flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto">
             <p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 Joyería Chartres. Artisanal
                 Excellence.</p>
             <div class="flex gap-4 mt-2 md:mt-0 font-label-sm text-label-sm text-on-surface-variant">
@@ -375,14 +401,15 @@
     </div>
 
     <!-- WhatsApp Floating Button -->
-    <a id="whatsapp-btn" href="https://wa.me/573004963443?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+    <a id="whatsapp-btn"
+        href="https://wa.me/573004963443?text=%C2%A1Hola!%20Vi%20la%20secci%C3%B3n%20de%20artesan%C3%ADas%20en%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20las%20piezas%20artesanales%20que%20ofrecen."
         target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
-        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
             </path>
-            <span>Contáctanos por WhatsApp</span>
         </svg>
+        <span class="wsp-label">Asesoría por WhatsApp</span>
     </a>
 </body>
 

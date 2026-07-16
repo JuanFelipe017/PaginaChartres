@@ -51,3 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuIcon = document.getElementById('mobile-menu-icon');
+
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        menuIcon.textContent = isHidden ? 'close' : 'menu';
+        menuBtn.setAttribute('aria-expanded', String(isHidden));
+    });
+}

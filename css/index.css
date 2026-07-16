@@ -121,3 +121,14 @@
         transform:translateX(0);
     }
 }
+
+@media (max-width: 767px) {
+    .gallery-track img {
+        width: 220px;
+        height: 150px;
+    }
+    .gallery-section::before,
+    .gallery-section::after {
+        width: 60px;
+    }
+}
