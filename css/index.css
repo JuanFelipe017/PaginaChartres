@@ -1,0 +1,123 @@
+/* ==========================================================================
+   CHARTRES — Estilos específicos de index.html (página principal)
+   ========================================================================== */
+
+/* Degradado oscuro sobre la imagen del hero para legibilidad del texto */
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 50, 25, 0.82) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(27, 28, 25, 0.45) 100%);
+}
+
+/* ===========================
+   GALERÍA CHARTRES
+=========================== */
+
+.gallery-section{
+    padding:120px 0;
+    overflow:hidden;
+    position:relative;
+    background:#faf8f4;
+}
+
+.gallery-row{
+    overflow:hidden;
+    margin:35px 0;
+}
+
+.gallery-track{
+    display:flex;
+    gap:24px;
+    width:max-content;
+}
+
+.gallery-track img{
+    height:230px;
+    width:340px;
+    object-fit:cover;
+    cursor:default;
+    border-radius:18px;
+    flex-shrink:0;
+    transition:.6s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.gallery-left{
+    animation:scrollLeft 80s linear infinite;
+}
+
+.gallery-right{
+    animation:scrollRight 90s linear infinite;
+}
+
+.gallery-center{
+    max-width:760px;
+    margin:90px auto;
+    text-align:center;
+    padding:0 30px;
+}
+
+.gallery-center p{
+    font-size:18px;
+    line-height:1.9;
+    color:#5b5b5b;
+    margin-bottom:30px;
+}
+
+.gallery-center a{
+    color:#0b4734;
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.gallery-section::before,
+.gallery-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.gallery-section::before{
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgba(250,248,244,1) 0%,
+        rgba(250,248,244,.90) 20%,
+        rgba(250,248,244,.65) 45%,
+        rgba(250,248,244,.30) 70%,
+        rgba(250,248,244,0) 100%
+    );
+}
+
+.gallery-section::after{
+    right: 0;
+    background: linear-gradient(
+        to left,
+        rgba(250,248,244,1) 0%,
+        rgba(250,248,244,.90) 20%,
+        rgba(250,248,244,.65) 45%,
+        rgba(250,248,244,.30) 70%,
+        rgba(250,248,244,0) 100%
+    );
+}
+
+@keyframes scrollLeft{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+@keyframes scrollRight{
+    from{
+        transform:translateX(-50%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}

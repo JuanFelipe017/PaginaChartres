@@ -1,0 +1,9 @@
+/* ==========================================================================
+   CHARTRES — Estilos específicos de cafeteria.html
+   ========================================================================== */
+
+/* Borde lateral fino usado en bloques de texto destacado */
+.asymmetric-border {
+    border-left: 0.5px solid #775a19;
+    padding-left: 2rem;
+}

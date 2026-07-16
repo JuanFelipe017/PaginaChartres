@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>CHARTRES | Joyería, Artesanía &amp; Café</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@200..800&amp;family=Bodoni+Moda:ital,wght@1,700&amp;display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-white">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b-[0.5px] border-outline-variant dark:border-outline">
+        <div class="flex justify-between items-center px-margin-desktop py-stack-sm max-w-container-max mx-auto h-20">
+            <a href="index.html" class="cursor-pointer transition-transform active:scale-95">
+                <img alt="Chartres Logo" class="h-12 w-auto object-contain" src="img/logo.svg">
+            </a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer transition-transform active:scale-95"
+                    href="joyeria.html">Joyería</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer transition-transform active:scale-95"
+                    href="artesania.html">Artesanías</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer transition-transform active:scale-95"
+                    href="cafeteria.html">Café</a>
+            </div>
+            <div class="flex items-center gap-6 md:hidden">
+                <button class="md:hidden">
+                    <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 hero-gradient z-10 bg-black/20"></div>
+            <img alt="Colombian Emerald Jewelry" class="absolute inset-0 w-full h-full object-cover hero-zoom"
+                data-alt="Imagen principal del local Joyeria Chartres" src="/img/fotos/img_local/f46.jpg">
+            <div class="relative z-20 text-center px-margin-mobile md:px-0">
+                <h2 class="font-label-sm text-label-sm uppercase tracking-[0.3em] mb-6 stagger-in"
+                    style="color: #f5f0e8; animation-delay: 0s">JM
+                    JOYERÍA CHARTRES</h2>
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg max-w-4xl mx-auto leading-tight italic stagger-in"
+                    style="color: #f5f0e8; animation-delay: 0.2s">
+                    Tradición, Elegancia y el Sabor de Colombia
+                </h1>
+            </div>
+        </section>
+        <!-- Section: El Alma de Chartres -->
+        <section class="py-section-gap bg-surface">
+            <div class="max-w-4xl mx-auto text-center px-margin-mobile">
+                <div class="flex justify-center mb-8">
+                    <img alt="Chartres" class="w-16 h-16 object-contain" src="img/logo.svg">
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">El Alma de Chartres</h2>
+                <p class="font-body-lg text-body-lg text-on-surface italic leading-loose">
+                    "Chartres representa esos lugares que por fuera parecen austeros o tranquilos, pero que guardan toda
+                    su vida, luz y tesoros en su interior. Al cruzar nuestra puerta, descubres un mundo de brillo,
+                    tradición y calidez."
+                </p>
+            </div>
+        </section>
+        <!-- Triple Feature -->
+        <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
+                <!-- Joyería Certificada -->
+                <div class="flex flex-col group">
+                    <div class="aspect-[3/4] image-reveal relative mb-stack-md bg-surface-container">
+                        <img alt="Joyería Certificada" class="w-full h-full object-cover"
+                            data-alt="Pequeña muestra de nuestra joyería de esmeraldas certificadas"
+                            src="/img/fotos/img_joyeria/f56.jpg">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                            <a href="joyeria.html" target="_blank" rel="noopener noreferrer"
+                                class="px-8 py-3 bg-white text-primary font-label-sm uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-primary hover:text-white inline-block">
+                                Ver Joyería
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Joyería Certificada</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Esmeraldas colombianas de pureza excepcional, certificadas y engastadas por maestros joyeros.
+                    </p>
+                </div>
+                <!-- Artesanías con Alma -->
+                <div class="flex flex-col group md:translate-y-12">
+                    <div class="aspect-[3/4] image-reveal relative mb-stack-md bg-surface-container">
+                        <img alt="Artesanías con Alma" class="w-full h-full object-cover"
+                            data-alt="Close-up of hand-woven Colombian crafts" src="/img/fotos/img_artesania/f38.jpg">
+                        <div
+                            class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                            <a href="artesania.html" target="_blank" rel="noopener noreferrer"
+                                class="px-8 py-3 bg-white text-secondary font-label-sm uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-secondary hover:text-white inline-block">
+                                Ver Artesanías
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Artesanías con Alma</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Objetos que cuentan historias de manos expertas y tradiciones ancestrales de nuestra tierra.
+                    </p>
+                </div>
+                <!-- Momentos de Café -->
+                <div class="flex flex-col group">
+                    <div class="aspect-[3/4] image-reveal relative mb-stack-md bg-surface-container">
+                        <img alt="Momentos de Café" class="w-full h-full object-cover"
+                            src="/img/fotos/img_cafe/f15.jpg">
+                        <div
+                            class="absolute inset-0 bg-[#3d1a00]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                            <a href="cafeteria.html" target="_blank" rel="noopener noreferrer"
+                                class="px-8 py-3 bg-white text-[#3d1a00] font-label-sm uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-[#3d1a00] hover:text-white inline-block">
+                                Ver Café
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Momentos de Café</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Un refugio sensorial donde el aroma del café colombiano se funde con la belleza de nuestra
+                        galería.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Nuestra Historia Section -->
+        <section id="nuestra-historia" class="py-section-gap relative overflow-hidden bg-surface-container-low">
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+                <div class="relative z-10 space-y-8 order-2 lg:order-1">
+                    <div class="w-12 h-[1px] bg-secondary"></div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Nuestra Historia</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface leading-loose italic">
+                        "Fundada sobre los cimientos de la maestría y la pasión por lo auténtico, Joyería Chartres nació
+                        no solo para exhibir piedras preciosas, sino para rendir homenaje a la riqueza cultural de
+                        Colombia."
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Ubicados en el corazón de Bogotá, hemos curado un espacio donde la elegancia del metal precioso
+                        convive armoniosamente con la rusticidad del arte manual y la calidez de una taza de café
+                        perfecta.
+                    </p>
+                </div>
+                <div class="relative order-1 lg:order-2">
+                    <div class="aspect-square bg-surface-container-highest shadow-2xl overflow-hidden">
+                        <img alt="Interior de la Tienda" class="w-full h-full object-cover"
+                            src="/img/fotos/img_local/f45.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========================
+        Galería de Fotos 
+        =========================== -->
+        <section class="gallery-section">
+
+            <!-- FILA SUPERIOR -->
+            <div class="gallery-row">
+                <div class="gallery-track gallery-left">
+                    <img src="img/fotos/img_joyeria/f16.jpg">
+                    <img src="img/fotos/img_cafe/f11.jpg">
+                    <img src="img/fotos/img_artesania/f18.jpg">
+                    <img src="img/fotos/img_cafe/f03.jpg">
+                    <img src="img/fotos/img_cafe/f05.jpg">
+                    <img src="img/fotos/img_joyeria/f42.jpg">
+                    <img src="img/fotos/img_artesania/f20.jpg">
+
+                    <!-- Repetición -->
+                    <img src="img/fotos/img_joyeria/f16.jpg">
+                    <img src="img/fotos/img_cafe/f11.jpg">
+                    <img src="img/fotos/img_artesania/f18.jpg">
+                    <img src="img/fotos/img_cafe/f03.jpg">
+                    <img src="img/fotos/img_cafe/f05.jpg">
+                    <img src="img/fotos/img_joyeria/f42.jpg">
+                    <img src="img/fotos/img_artesania/f20.jpg">
+                </div>
+            </div>
+
+            <!-- TEXTO -->
+            <div class="gallery-center">
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                    Descubre nuestro mundo
+                </h2>
+                <p>
+                    Cada rincón de Chartres cuenta una historia.
+                    Desde el brillo de una esmeralda hasta el
+                    aroma de un café recién preparado.
+                </p>
+                <a href="https://www.instagram.com/joyeriachartres/" target="_blank">
+                    @JoyeriaChartres
+                </a>
+            </div>
+            <!-- FILA INFERIOR -->
+            <div class="gallery-row">
+                <div class="gallery-track gallery-right">
+                    <img src="img/fotos/img_joyeria/f17.jpg">
+                    <img src="img/fotos/img_artesania/f36.jpg">
+                    <img src="img/fotos/img_artesania/f85.jpg">
+                    <img src="img/fotos/img_joyeria/f43.jpg">
+                    <img src="img/fotos/img_local/f41.jpg">
+                    <img src="img/fotos/img_artesania/f98.jpg">
+                    <img src="img/fotos/img_artesania/f89.jpg">
+
+                    <!-- Repetición -->
+                    <img src="img/fotos/img_joyeria/f17.jpg">
+                    <img src="img/fotos/img_artesania/f36.jpg">
+                    <img src="img/fotos/img_artesania/f85.jpg">
+                    <img src="img/fotos/img_joyeria/f43.jpg">
+                    <img src="img/fotos/img_local/f41.jpg">
+                    <img src="img/fotos/img_artesania/f98.jpg">
+                    <img src="img/fotos/img_artesania/f89.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- Contact/Visit Us Section -->
+        <section class="py-section-gap bg-surface-container">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div>
+                        <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Visítanos en Bogotá</h2>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="location_on">location_on</span>
+                                <div>
+                                    <h4 class="font-label-sm text-label-sm uppercase text-secondary mb-1">Dirección</h4>
+                                    <p class="font-body-md text-body-md">Calle 16 No 4-67 Local 7, Pasaje Hotel
+                                        Continental<br>Bogotá, Colombia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="schedule">schedule</span>
+                                <div>
+                                    <h4 class="font-label-sm text-label-sm uppercase text-secondary mb-1">Horarios</h4>
+                                    <p class="font-body-md text-body-md">Lunes a Sábado: 9:00 AM - 6:00 PM
+                                        <br>Domingos y Festivos:
+                                        10:00 AM - 5:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+                                <div>
+                                    <h4 class="font-label-sm text-label-sm uppercase text-secondary mb-1">Teléfono</h4>
+                                    <p class="font-body-md text-body-md">(601) 474 3846</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary" data-icon="chat">chat</span>
+                                <div>
+                                    <h4 class="font-label-sm text-label-sm uppercase text-secondary mb-1">WhatsApp &amp;
+                                        Contacto</h4>
+                                    <div class="space-y-1">
+                                        <p class="font-body-md text-body-md">300 496 3443</p>
+                                        <a class="font-body-md text-body-md hover:text-primary underline decoration-secondary"
+                                            href="mailto:jhonramireza58@hotmail.com">jhonramireza58@hotmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="h-full min-h-[400px] bg-surface shadow-xl rounded-xl overflow-hidden relative border border-white/50">
+                        <div class="absolute inset-0">
+                            <iframe allowfullscreen="" data-location="Bogotá, Colombia" height="100%" loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.924843477161!2d-74.0736111!3d4.6033333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMzYnMTIuMCJOIDc0wrAwNCcyNS4wIlc!5e0!3m2!1sen!2sco!4v1623800000000!5m2!1sen!2sco"
+                                style="border:0;" width="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Franja Reseña Google + Video -->
+    <section class="bg-surface-container-low py-16">
+        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            <!-- Video de Instagram -->
+            <div class="rounded-xl overflow-hidden shadow-xl aspect-video">
+                <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                    <source src="img/fotos/video_local.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Texto + CTA Google -->
+            <div class="flex flex-col gap-6">
+                <div class="w-12 h-[1px] bg-secondary"></div>
+                <h2 class="font-headline-lg text-headline-lg text-primary">Así somos por dentro</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-loose">
+                    Un rincón único en el corazón de Bogotá donde conviven la joyería de esmeraldas certificadas,
+                    las artesanías colombianas y el mejor café de origen.
+                </p>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-loose">
+                    ¿Ya nos visitaste? Tu opinión nos ayuda a llegar a más personas que buscan lo auténtico de Colombia.
+                </p>
+                <a href="https://g.page/r/XXXXXX/review" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/90 transition-all self-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-white">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+                    </svg>
+                    Déjanos una reseña en Google
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest w-full mt-0">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+            <!-- Brand Column -->
+            <div class="flex flex-col gap-4">
+                <img alt="CHARTRES" class="h-10 w-fit" src="img/logo.svg">
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Curadores de excelencia artesanal colombiana. Joyería, café y galería en un solo espacio.
+                </p>
+            </div>
+            <!-- Links 1 -->
+            <div>
+                <div class="flex flex-col gap-stack-sm">
+                    <h5 class="font-label-sm text-label-sm text-primary uppercase mb-2">Secciones</h5>
+                    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="joyeria.html">Joyería</a>
+                    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="artesania.html">Artesanías</a>
+                    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="cafeteria.html">Café</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-stack-sm">
+                <h5 class="font-label-sm text-label-sm text-primary uppercase mb-2">Contacto</h5>
+                <p class="font-body-md text-body-md text-on-surface-variant">Calle 16 No 4-67 Local 7</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Bogotá, Colombia</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">(601) 474 3846</p>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"
+                    href="mailto:jhonramireza58@hotmail.com">jhonramireza58@hotmail.com</a>
+            </div>
+            <!-- Socials / Contact -->
+            <div>
+                <h4 class="font-label-sm text-label-sm text-primary font-bold mb-4 uppercase">Síguenos</h4>
+                <div class="flex gap-4 mb-4">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/joyeriachartres/" aria-label="Instagram"
+                        class="text-primary hover:opacity-70 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=61591786051568" aria-label="Facebook"
+                        class="text-primary hover:opacity-70 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@joyeriachartres" aria-label="TikTok"
+                        class="text-primary hover:opacity-70 transition-opacity" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path
+                                d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.228V2h-3.157v13.548a2.724 2.724 0 1 1-2.724-2.724c.226 0 .447.028.662.08V9.693a5.89 5.89 0 0 0-.662-.037A5.882 5.882 0 1 0 15.82 15.54V8.687a7.936 7.936 0 0 0 4.769 1.594V7.124a4.77 4.77 0 0 1-1-.438z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="border-t border-outline-variant px-margin-desktop py-stack-sm flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto">
+            <p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 Joyería Chartres. Artisanal
+                Excellence.</p>
+            <div class="flex gap-4 mt-2 md:mt-0 font-label-sm text-label-sm text-on-surface-variant">
+                <button onclick="document.getElementById('modal-terminos').classList.remove('hidden')"
+                    class="hover:text-primary transition-colors">Términos</button>
+                <button onclick="document.getElementById('modal-privacidad').classList.remove('hidden')"
+                    class="hover:text-primary transition-colors">Privacidad</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+
+    <!-- Modal Términos -->
+    <div id="modal-terminos" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/50">
+        <div class="bg-surface max-w-lg w-full p-8 relative max-h-[80vh] overflow-y-auto">
+            <button onclick="document.getElementById('modal-terminos').classList.add('hidden')"
+                class="absolute top-4 right-4 text-primary hover:opacity-70">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 class="font-headline-md text-headline-md text-primary mb-4">Términos y Condiciones</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant space-y-3">
+                <p>Al visitar y utilizar este sitio web, usted acepta los siguientes términos y condiciones.</p>
+                <p><strong>Uso del sitio.</strong> Este sitio es de carácter informativo. Toda compra o consulta se
+                    gestiona directamente a través de nuestros canales de atención (WhatsApp, teléfono o visita al
+                    local).</p>
+                <p><strong>Propiedad intelectual.</strong> Todos los contenidos de este sitio (imágenes, textos,
+                    logotipos) son propiedad de Joyería Chartres y están protegidos por las leyes colombianas de
+                    propiedad intelectual.</p>
+                <p><strong>Certificaciones.</strong> Las piezas de joyería cuentan con certificación gemológica. Los
+                    documentos están disponibles para consulta en nuestro local ubicado en Calle 16 No 4-67 Local 7,
+                    Pasaje Hotel Continental, Bogotá.</p>
+                <p><strong>Modificaciones.</strong> Nos reservamos el derecho de actualizar estos términos en cualquier
+                    momento.</p>
+                <p class="text-sm opacity-70">Vigente desde enero de 2025. Bogotá, Colombia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Privacidad -->
+    <div id="modal-privacidad" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/50">
+        <div class="bg-surface max-w-lg w-full p-8 relative max-h-[80vh] overflow-y-auto">
+            <button onclick="document.getElementById('modal-privacidad').classList.add('hidden')"
+                class="absolute top-4 right-4 text-primary hover:opacity-70">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 class="font-headline-md text-headline-md text-primary mb-4">Política de Privacidad</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant space-y-3">
+                <p>Joyería Chartres respeta su privacidad y se compromete a proteger los datos personales que comparta
+                    con nosotros.</p>
+                <p><strong>Datos que recopilamos.</strong> Únicamente recopilamos la información que usted nos
+                    proporciona voluntariamente a través de WhatsApp o contacto directo (nombre, teléfono, correo
+                    electrónico).</p>
+                <p><strong>Uso de los datos.</strong> La información recopilada se usa exclusivamente para atender su
+                    consulta o pedido. No compartimos sus datos con terceros.</p>
+                <p><strong>Derechos.</strong> Usted tiene derecho a conocer, actualizar y solicitar la eliminación de
+                    sus datos personales conforme a la Ley 1581 de 2012 (Habeas Data, Colombia).</p>
+                <p><strong>Contacto.</strong> Para ejercer sus derechos de privacidad, contáctenos por WhatsApp al 300
+                    496 3443 o visítenos en nuestro local.</p>
+                <p class="text-sm opacity-70">Vigente desde enero de 2025. Bogotá, Colombia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a id="whatsapp-btn" href="https://wa.me/573004963443?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+        target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+            </path>
+            <span>Contáctanos por WhatsApp</span>
+        </svg>
+    </a>
+</body>
+
+</html>
